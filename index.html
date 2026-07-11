@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>STUDENT DETAILS </title>
+</head>
+<body style="background-color: blueviolet;"> 
+    
+ <h1>student details </h1>
+
+ <table border="3" style="background-color: brown;">
+    <tr>
+        <th>NAME</th>
+        <th>DEPARTMENT</th>
+        <th>COURSE</th>
+        
+    </tr>
+    {% for student in students %}
+    <tr>
+        <td>{{ student.name }}</td>
+        <td>{{ student.department }}</td>
+        <td>{{ student.course }}</td>
+        
+    </tr>
+    {% endfor %}
+
+ </table>
+<a href="/">Add another student</a>
+
+</body>
+</html>
